@@ -712,6 +712,25 @@ export const dishes: Dish[] = [
       "Wrap in banana leaves and steam until firm and cake-like."
     ],
     nutrition: { calories: 410, protein: 35, carbs: 10, fat: 28, fiber: 6 }
+  },
+  {
+    id: "spaghetti-omelette",
+    name: "Spaghetti Omelette",
+    shortDescription: "A deliciously satisfying fusion of pasta and eggs.",
+    description: "Spaghetti Omelette is a popular fusion dish combining boiled spaghetti with seasoned beaten eggs. It is pan-fried to form a thick, golden, crispy-edged cake, making it perfect for breakfast or a hearty snack.",
+    image: "/Spaghetti Omelette Recipe.jpg",
+    category: "Breakfast",
+    mealType: ["Breakfast", "Snack"],
+    dietaryLabels: ["Vegetarian", "High-Carb", "High-Protein"],
+    suitableFor: ["Quick Meals", "Energy Boost"],
+    ingredients: ["Spaghetti", "Eggs", "Onions", "Tomatoes", "Vegetable oil", "Spices"],
+    preparationSteps: [
+      "Boil spaghetti until al dente and drain.",
+      "Whisk eggs with chopped onions, tomatoes, and spices.",
+      "Mix the spaghetti into the beaten eggs.",
+      "Pan-fry the mixture in a skillet until golden brown on both sides."
+    ],
+    nutrition: { calories: 450, protein: 18, carbs: 50, fat: 20, fiber: 3 }
   }
 ];
 
@@ -753,4 +772,5 @@ export const recommendationReasons: Record<string, string> = {
   "cornchaff-2": "A fantastic plant-based protein and fiber mix for heart health.",
   "kwacoco-bible": "A wonderful steamed dish packed with iron-rich spinach and healthy fats.",
   "egusi-pudding": "A keto-friendly, high-protein steamed delicacy that is highly satisfying.",
+  "spaghetti-omelette": "A quick, satisfying, and energy-packed meal combining complex carbs and healthy proteins.",
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import type { Dish } from "../../lib/mockData";
@@ -16,6 +16,7 @@ interface DishCardProps {
 
 export default function DishCard({ dish, animDelay = 0 }: DishCardProps) {
   const { user } = useUser();
+  const router = useRouter();
   const [sentiment, setSentiment] = useState<"like" | "unlike" | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
 
@@ -36,6 +37,7 @@ export default function DishCard({ dish, animDelay = 0 }: DishCardProps) {
 
   const handleSentiment = async (e: React.MouseEvent, type: "like" | "unlike") => {
     e.preventDefault(); // Prevent navigating to the dish detail page
+    e.stopPropagation(); // Prevent card click
     if (!user) return alert("Please sign in to rate meals");
 
     const newSentiment = sentiment === type ? null : type;
@@ -57,6 +59,7 @@ export default function DishCard({ dish, animDelay = 0 }: DishCardProps) {
 
   return (
     <article
+      onClick={() => router.push(`/dishes/${dish.id}`)}
       style={{
         ...styles.card,
         animationDelay: `${animDelay}ms`,
@@ -106,10 +109,10 @@ export default function DishCard({ dish, animDelay = 0 }: DishCardProps) {
 
         {/* Bottom Action Row */}
         <div style={styles.footerRow}>
-          <Link href={`/dishes/${dish.id}`} style={styles.viewBtn}>
+          <div style={styles.viewBtn}>
             View Details
             <ArrowRight size={15} strokeWidth={2.2} />
-          </Link>
+          </div>
 
           <div style={styles.sentimentGroup}>
             <button
@@ -151,7 +154,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     flexDirection: "column",
     transition: "transform var(--transition), box-shadow var(--transition)",
-    cursor: "default",
+    cursor: "pointer",
   },
   imageWrap: {
     position: "relative",
