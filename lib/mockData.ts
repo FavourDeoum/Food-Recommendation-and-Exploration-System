@@ -119,10 +119,10 @@ export const dishes: Dish[] = [
   },
   {
     id: "kondre",
-    name: "Kondre",
+    name: "Kondrè",
     shortDescription: "A rich, slow-cooked plantain and meat stew.",
     description: "Kondre is a ceremonial dish from the Bamiléké people of Western Cameroon. It's an incredibly flavorful, slow-cooked one-pot meal combining unripe or semi-ripe plantains with beef, palm oil, and traditional spices.",
-    image: "/Kondrè11.jpeg",
+    image: "/Kondre15.jpeg",
     category: "Traditional",
     mealType: ["Lunch", "Dinner"],
     dietaryLabels: ["High-Potassium", "Dairy-Free"],
@@ -255,7 +255,7 @@ export const dishes: Dish[] = [
     name: "Ekwang",
     shortDescription: "Grated cocoyam wrapped in leaves and stewed with meats.",
     description: "A revered labor-of-love dish from the Bafaw/Oroko people. It consists of freshly grated taro (cocoyam) carefully tied in tiny cocoyam leaf bundles, and simmered slowly in a rich broth of palm oil, smoked fish, and periwinkles.",
-    image: "/hero-food.png",
+    image: "/Ekwang.jpeg",
     category: "Traditional",
     mealType: ["Dinner", "Lunch"],
     dietaryLabels: ["Gluten-Free", "High-Fiber", "High-Calorie"],
@@ -426,7 +426,7 @@ export const dishes: Dish[] = [
     name: "Kati Kati",
     shortDescription: "Roasted chicken sautéed in a spicy, palm oil-rich sauce.",
     description: "Kati Kati is a delicacy from the Northwest region of Cameroon. It involves roasting chicken over an open flame, then chopping and simmering it in a rich, spicy palm oil sauce. Best enjoyed with fufu corn.",
-    image: "/Kati kati and Cameroonian Style Turnip greens  – AFROVITALITYEATS.jpg",
+    image: "/Kahti kahti.jpg",
     category: "Protein",
     mealType: ["Lunch", "Dinner"],
     dietaryLabels: ["High-Protein", "Keto-Friendly"],
@@ -458,25 +458,6 @@ export const dishes: Dish[] = [
       "Serve hot with sliced raw onions and extra spice."
     ],
     nutrition: { calories: 300, protein: 35, carbs: 5, fat: 18, fiber: 2 }
-  },
-  {
-    id: "moi-moi",
-    name: "Moi Moi",
-    shortDescription: "Savory, steamed bean pudding rich in protein.",
-    description: "Moi Moi is a deeply flavorful, protein-rich steamed pudding made from blended black-eyed peas, peppers, onions, and oil. It can be studded with hard-boiled eggs, fish, or corned beef.",
-    image: "/dish-moi-moi.png",
-    category: "Protein",
-    mealType: ["Breakfast", "Lunch", "Snack"],
-    dietaryLabels: ["High-Protein", "Gluten-Free", "Vegetarian-Option"],
-    suitableFor: ["Muscle Building", "Healthy Snacking"],
-    ingredients: ["Black-eyed peas", "Red bell peppers", "Onions", "Vegetable oil or Palm oil", "Hard-boiled eggs or fish"],
-    preparationSteps: [
-      "Soak and peel the black-eyed peas.",
-      "Blend the peeled beans with peppers, onions, and water into a smooth batter.",
-      "Mix in oil, seasonings, and add-ins like eggs or flaked fish.",
-      "Pour into containers or leaves and steam until set."
-    ],
-    nutrition: { calories: 320, protein: 18, carbs: 35, fat: 14, fiber: 8 }
   },
   {
     id: "white-bean-stew",
@@ -761,7 +742,6 @@ export const recommendationReasons: Record<string, string> = {
   "puff-puff-beans": "A classic sweet and savory combo providing an excellent energy boost.",
   "kati-kati": "A high-protein, smoky delight perfect for keto and low-carb diets.",
   suya: "A low-carb, protein-packed snack with a satisfying, nutty crunch.",
-  "moi-moi": "An excellent gluten-free source of plant-based protein and fiber.",
   "white-bean-stew": "A comforting, high-fiber meal that promotes digestive wellness.",
   "stewed-irish-porridge": "Provides excellent complex carbs and warmth for sustained energy.",
   "mbongo-tchobi-plantain": "A flavor-packed pescatarian combo with great potassium from plantains.",

@@ -58,7 +58,7 @@ export default function HomePage() {
           >
             <div style={styles.heroImageCard}>
               <Image
-                src="/hero-food.png"
+                src="/hero-food.jpg"
                 alt="Colourful bowl of Nigerian jollof rice surrounded by fresh ingredients"
                 width={480}
                 height={420}
