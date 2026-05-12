@@ -36,7 +36,7 @@ export const dishes: Dish[] = [
     preparationSteps: [
       "Boil and pound the cocoyam until extremely smooth.",
       "Prepare the yellow soup by mixing palm oil with limestone water to emulsify.",
-      "Add traditional spaces, cooked meat, and bouillon.",
+      "Add traditional spices, cooked meat, and bouillon.",
       "Serve the soup alongside the pounded taro."
     ],
     nutrition: { calories: 650, protein: 30, carbs: 75, fat: 28, fiber: 8 }
@@ -112,6 +112,7 @@ export const dishes: Dish[] = [
     preparationSteps: [
       "Soak, peel, and coarsely blend the black-eyed peas.",
       "Gradually mix in warm palm oil and a bit of water to form a fluffy batter.",
+      "Layer the bottom of a pot with periwinkles or plantain stalks.",
       "Wrap portions of the batter in warmed banana leaves.",
       "Steam for about an hour until set and cooked through."
     ],
@@ -146,11 +147,11 @@ export const dishes: Dish[] = [
     mealType: ["Lunch", "Dinner"],
     dietaryLabels: ["High-Protein", "Keto-Friendly Option", "Gluten-Free"],
     suitableFor: ["Muscle Building", "Low Carb Diets"],
-    ingredients: ["Washed bitter leaves", "Raw peanuts", "Beef", "Dried crayfish", "Fresh shrimp", "Vegetable oil"],
+    ingredients: ["Washed bitter leaves", "Raw groundnuts", "Beef", "Dried crayfish", "Fresh shrimp", "Vegetable oil"],
     preparationSteps: [
       "Boil and thoroughly wash bitter leaves to remove excess bitterness.",
-      "Boil peanuts and blend them into a smooth paste.",
-      "Cook beef until tender, then add the peanut paste.",
+      "Boil grandnuts and blend them into a smooth paste.",
+      "Cook beef until tender, then add the grandnut paste.",
       "Stir in the bitter leaves and simmer. Garnish with separately sautéed onions and shrimp."
     ],
     nutrition: { calories: 620, protein: 40, carbs: 15, fat: 48, fiber: 11 }
@@ -162,7 +163,7 @@ export const dishes: Dish[] = [
     description: "Cameroonian pepper soup is a bold, intensely spicy, and deeply aromatic broth featuring assorted chunks of meat or fresh fish. It is packed with medicinal spices like country onion, njangsa, and ginger.",
     image: "/Catfish pepper soup.jpg",
     category: "Light",
-    mealType: ["Lunch", "Dinner", "Snack"],
+    mealType: ["Lunch", "Dinner"],
     dietaryLabels: ["Low-Calorie", "Low-Carb", "High-Protein"],
     suitableFor: ["Weight Control", "Cold Recovery"],
     ingredients: ["Fish, goat, or beef", "Pepper soup spices mix", "Habanero peppers", "Garlic and ginger", "Scent leaves"],
@@ -264,7 +265,7 @@ export const dishes: Dish[] = [
     preparationSteps: [
       "Peel, wash, and manually grate the cocoyam.",
       "Place small amounts of the grated mix onto torn leaves and roll tightly.",
-      "Layer the bottom of a pot with periwinkles or plantain stalks.",
+      "Layer the bottom of a pot with palm oil",
       "Stack the rolls, add water, smoked fish, and palm oil, then simmer without stirring."
     ],
     nutrition: { calories: 600, protein: 25, carbs: 65, fat: 28, fiber: 11 }
@@ -355,7 +356,7 @@ export const dishes: Dish[] = [
     mealType: ["Lunch", "Dinner"],
     dietaryLabels: ["Pescatarian", "High-Protein", "Dairy-Free"],
     suitableFor: ["Heart Health", "Flavor Enthusiasts"],
-    ingredients: ["White fish (Catfish or similar)", "Mbongo spice blend", "Tomatoes", "Onions", "Garlic and ginger", "Peanut oil"],
+    ingredients: ["White fish (Catfish or similar)", "Mbongo spice blend", "Tomatoes", "Onions", "Garlic and ginger", "Grandnut oil"],
     preparationSteps: [
       "Clean the fish and set aside.",
       "Blend tomatoes, onions, garlic, ginger, and the dark mbongo spice.",
@@ -638,7 +639,7 @@ export const dishes: Dish[] = [
     preparationSteps: [
       "Peel, wash, and manually grate the cocoyam.",
       "Place small amounts of the grated mix onto torn leaves and roll tightly.",
-      "Layer the bottom of a pot with periwinkles or plantain stalks.",
+      "Layer the bottom of a pot with palm oil",
       "Stack the rolls, add water, smoked fish, and palm oil, then simmer without stirring."
     ],
     nutrition: { calories: 600, protein: 25, carbs: 65, fat: 28, fiber: 11 }
