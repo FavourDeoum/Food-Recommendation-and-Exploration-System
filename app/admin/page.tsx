@@ -74,7 +74,7 @@ export default function AdminDashboard() {
   };
  
   const handleCheckboxChange = (
-    name: "mealType" | "dietaryLabels",
+    name: "mealType" | "dietaryLabels" | "suitableFor",
     value: string
   ) => {
     setFormData((prev) => {
@@ -668,24 +668,49 @@ export default function AdminDashboard() {
                     ))}
                   </div>
  
-                  {/* Classification */}
-                  <div className="classification-row">
+                  {/* Divider */}
+                  <div className="span-2"><div style={dividerStyle} /></div>
+ 
+                  {/* Health & Benefits Card */}
+                  <div className="span-2">
+                    <h3 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#111827", marginBottom: "4px" }}>Health &amp; Benefits</h3>
+                    <p style={{ fontSize: "0.9rem", color: "#6b7280", marginBottom: "16px" }}>Highlight the nutritional perks to help customers make informed choices.</p>
+                  </div>
+                  
+                  <div className="span-2" style={{ display: "flex", flexDirection: "column", gap: "24px", backgroundColor: "#f9fafb", padding: "24px", borderRadius: "16px", border: "1px solid #e5e7eb" }}>
                     <div>
-                      <label style={labelStyle}>Meal Times</label>
+                      <label style={labelStyle}>Dietary Benefits (Tags)</label>
                       <div className="checkbox-group">
-                        {["Breakfast", "Lunch", "Dinner"].map((t) => (
+                        {["Gluten-Free", "Vegan", "High-Protein", "Low-Carb", "High-Fiber", "Dairy-Free", "Rich in Iron", "Keto-Friendly"].map((t) => (
                           <label key={t} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.95rem", color: "#374151", cursor: "pointer", fontWeight: 500 }}>
-                            <input type="checkbox" checked={formData.mealType.includes(t)} onChange={() => handleCheckboxChange("mealType", t)} /> {t}
+                            <input type="checkbox" checked={formData.dietaryLabels.includes(t)} onChange={() => handleCheckboxChange("dietaryLabels", t)} /> {t}
                           </label>
                         ))}
                       </div>
                     </div>
                     <div>
-                      <label style={labelStyle}>Dietary Tags</label>
+                      <label style={labelStyle}>Suitable For</label>
                       <div className="checkbox-group">
-                        {["Gluten-Free", "Vegan", "High-Protein", "Low-Carb"].map((t) => (
+                        {["Weight Loss", "Weight Gain", "Muscle Building", "Heart Health", "Digestive Health", "Blood Sugar Control", "Energy Boost", "Anemia Prevention"].map((t) => (
                           <label key={t} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.95rem", color: "#374151", cursor: "pointer", fontWeight: 500 }}>
-                            <input type="checkbox" checked={formData.dietaryLabels.includes(t)} onChange={() => handleCheckboxChange("dietaryLabels", t)} /> {t}
+                            <input type="checkbox" checked={formData.suitableFor.includes(t)} onChange={() => handleCheckboxChange("suitableFor", t)} /> {t}
+                          </label>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+ 
+                  {/* Divider */}
+                  <div className="span-2"><div style={dividerStyle} /></div>
+ 
+                  {/* Classification */}
+                  <div className="classification-row">
+                    <div style={{ width: "100%" }}>
+                      <label style={labelStyle}>Meal Times</label>
+                      <div className="checkbox-group">
+                        {["Breakfast", "Lunch", "Dinner"].map((t) => (
+                          <label key={t} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.95rem", color: "#374151", cursor: "pointer", fontWeight: 500 }}>
+                            <input type="checkbox" checked={formData.mealType.includes(t)} onChange={() => handleCheckboxChange("mealType", t)} /> {t}
                           </label>
                         ))}
                       </div>
