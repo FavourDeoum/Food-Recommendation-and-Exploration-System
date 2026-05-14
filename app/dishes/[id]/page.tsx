@@ -49,7 +49,7 @@ export default async function DishDetailPage({ params }: { params: Promise<{ id:
         </div>
 
         {/* Product Meta */}
-        <div style={styles.headerMeta} className="animate-fade-in-up" strokeWidth="100ms">
+        <div style={{ ...styles.headerMeta, animationDuration: "100ms" }} className="animate-fade-in-up">
           <div style={styles.badgeRow}>
             <Badge label={dish.category} variant="green" size="md" />
           </div>
