@@ -62,7 +62,7 @@ export default function Navbar() {
               <Link href="/personalized" style={styles.ctaBtn}>
                 Dashboard
               </Link>
-              <UserButton afterSignOutUrl="/" />
+              <UserButton />
             </>
           )}
         </div>
@@ -108,7 +108,7 @@ export default function Navbar() {
             <>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 16px', background: 'var(--green-50)', borderRadius: '10px', marginTop: '8px' }}>
                 <span style={{ fontWeight: 600, color: 'var(--green-600)' }}>My Account</span>
-                <UserButton afterSignOutUrl="/" />
+                <UserButton />
               </div>
               <Link
                 href="/personalized"
